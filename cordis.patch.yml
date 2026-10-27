@@ -1,0 +1,11 @@
+- id: permission
+  config:
+    presets:
+      command-gate:
+        sandbox: workspace-write
+        approval: ask
+        name: Command Gate
+        description: Fail-closed shell command allowlist with human approval fallback.
+- insert:
+    - id: command-gate
+      name: dsh-command-gate

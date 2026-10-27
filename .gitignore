@@ -1,2 +1,5 @@
 skills-lock.json
 .agents/
+node_modules/
+lib/
+coverage/

@@ -1,0 +1,27 @@
+{
+  "name": "dsh-command-gate",
+  "version": "0.1.0",
+  "description": "Fail-closed shell command gate for DeepSeek Harness",
+  "type": "module",
+  "main": "./lib/index.js",
+  "types": "./lib/types/index.d.ts",
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "build": "tsc -p tsconfig.build.json"
+  },
+  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } },
+  "dependencies": { "@deepseek-ai/schemastery": "~3.18.5" },
+  "devDependencies": {
+    "@deepseek-ai/cordis": "~4.0.5",
+    "@deepseek-ai/dsh-agent": "0.2.1-rc.1",
+    "@deepseek-ai/dsh-permission-presets": "0.2.1-rc.1",
+    "@deepseek-ai/dsh-settings": "0.2.1-rc.1",
+    "@deepseek-ai/dsh-tools": "0.2.1-rc.1",
+    "@deepseek-ai/dsh-user-approval": "0.2.1-rc.1",
+    "@types/node": "^22.20.0",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.8"
+  },
+  "packageManager": "pnpm@11.7.0"
+}
