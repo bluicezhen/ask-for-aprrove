@@ -1,5 +1,5 @@
 {
   "extends":"./tsconfig.json",
-  "compilerOptions":{"noEmit":false,"outDir":"lib","rootDir":".","declaration":true,"declarationMap":true,"rewriteRelativeImportExtensions":true,"allowImportingTsExtensions":false},
+  "compilerOptions":{"noEmit":false,"outDir":"lib","rootDir":"src","declaration":true,"declarationMap":true,"rewriteRelativeImportExtensions":true,"allowImportingTsExtensions":false},
   "exclude":["tests"]
 }
